@@ -1,4 +1,4 @@
-# Projeto Conceitual de Banco de Dados E-commerce
+# Projeto Conceitual de Banco de Dados - E-commerce
 
 Este repositório contém o Modelo Conceitual e Lógico de banco de dados para um sistema de E-commerce: 'PC e-commerce.mwb' - Arquivo original do MySQL Workbench com o diagrama EER completo. O projeto foca na criação e no refinamento de um modelo, aplicando regras de negócios e melhores práticas de modelagem relacional (SQL).
 
@@ -23,7 +23,7 @@ Abaixo estão as principais alterações implementadas no modelo original para a
 Para resolver o requisito de que uma conta pode ser PJ ou PF (nunca amabas), foi aplicada a técnica de **Especialização/Generalização (Herança)**:
 
 * **Entidade Pai:** `Cliente` (Dados comuns: ID, Nome, dados de contato).
-* **Entidades Filhas:** `Pessoa_Fisica` e `Pessoa_Juridica`.
+* **Entidades Filhas:** `Pessoa Fisica` e `Pessoa Juridica`.
 * **Integridade:** Relacionamento 1:1 onde a Chave Primária (PK) das tabelas filhas também atua como Chave Estrangeira (FK), garantindo unicidade e evitando colunas nulas desnecessárias (como um campo CNPJ vazio para um cliente comum).
 
 ### 2. Múltiplos Meios de Pagamento
@@ -44,8 +44,7 @@ A entrega foi desacoplada do pedido para permitir rastreamento granular e gestã
 ## 👣 Como Visualizar
 
 1. Baixe e instale o [MySQL Workbench](https://www.mysql.com/products/workbench/).
-2. Clone este repositório: `git clone https://github.com/seu-usuario/seu-repo.git`
+2. Clone este repositório.
 3. Abra o arquivo `.mwb` no MySQL Workbench para visualizar o diagrama e as propriedades das tabelas.
-
 
 *Projeto desenvolvido como parte de desafio técnico de modelagem de dados.*
